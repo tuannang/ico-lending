@@ -1296,6 +1296,19 @@ input:-ms-input-placeholder {
   color: #fe467c;
 }
 
+.btc, .eth {
+  display: inline-block;
+  margin-right: 15px;
+  font-family: Rajdhani;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.23;
+  text-align: left;
+  color: rgba(56,56,56,.5);
+  white-space: nowrap;
+}
+
+
 .valute {
   vertical-align: top;
   margin-top: 9px;
@@ -1321,6 +1334,11 @@ input:-ms-input-placeholder {
     font-size: 225%;
     color: white;
   }
+
+  .btc, .eth {
+    font-size: 12px;
+  }
+
   .category-table-header {
     display: none;
   }
@@ -1473,6 +1491,9 @@ input:-ms-input-placeholder {
     font-size: 11px;
     margin-top: 0;
   }
+  .btc, .eth {
+    font-size: 11px;
+}
 }
 
 .list-thin {
@@ -1526,6 +1547,13 @@ input:-ms-input-placeholder {
   }
   .categ_top_table span:nth-of-type(6) {
     width: 88px;
+  }
+}
+
+@media all and (max-width:360px) {
+
+  .btc, .eth {
+      margin-right: 3px;
   }
 }
 
