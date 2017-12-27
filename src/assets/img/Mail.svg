@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Resources" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.600000024">
+        <g id="Footer-/-Desktop" transform="translate(-847.000000, -34.000000)" fill="#383838">
+            <g id="Group-4" transform="translate(20.000000, 0.000000)">
+                <g id="col" transform="translate(827.000000, 30.000000)">
+                    <g id="Email">
+                        <path d="M15.9818915,5.90587264 L8.93377508,9.84062936 C8.43141851,10.1210803 7.5680041,10.120758 7.06622492,9.84062936 L0.0181085069,5.90587264 C0.152417904,4.73892085 1.02422022,4 2.31111111,4 L13.6888889,4 C14.9757798,4 15.8475821,4.73892085 15.9818915,5.90587264 Z M16,6.86466165 L16,13.7714286 C16,15.1231921 15.0907177,16 13.6888889,16 L2.31111111,16 C0.909282264,16 0,15.1231921 0,13.7714286 L0,6.86466165 L7.21676649,11.6260997 C7.69187652,11.9395652 8.30812348,11.9395652 8.78323351,11.6260997 L16,6.86466165 Z" id="Mail"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,52 @@
+<div class="justify-content-center">
+  <header class="col-12 text-center category-table-header">
+      <h1>UPCOMING ICO</h1><sup class="blue">48</sup>
+  </header><!-- .page-header -->
+</div>
+<div class='categ_new_tabs'>
+  <ul>
+      <li class='active_tab_category'>All<sub>{{projects.length}}</sub></li>
+      <li>RATED<sub>{{ratedProjectArr.length}}</sub></li>
+      <li>NOT RATED<sub>{{notRatedProjectArr.length}}</sub></li>
+  </ul>
+</div>
+<div id='upcoming_table_head' class='categ_top_table'>
+  <span>Project</span>
+  <span>Interest</span>
+  <span>Category</span>
+  <span>Goal</span>
+  <span>Start Date</span>
+  <span>End Date</span>
+</div>
+<div class="tabs__content active">
+  <div class='col-lg-6 col-md-12 col-12 all' id='ajaxc'>
+      <div>
+          <div class="category-desk justify-content-center">
+              <h3 class="col-md-12 col-12 not_rated">All</h3>
+              <app-list-item *ngFor="let project of projects" [project]="project"></app-list-item>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="tabs__content">
+  <div class='col-lg-6 col-md-12 col-12 first_r' id='ajaxc'>
+      <div>
+          <div class="category-desk justify-content-center">
+              <h3 class="col-md-12 col-12 not_rated">RATED ICO</h3>
+              <app-list-item *ngFor="let project of ratedProjectArr" [project]="project"></app-list-item>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="tabs__content">
+  <div class='col-lg-6 col-md-12 col-12 end_r' id='ajaxc'>
+      <div>
+          <div class="category-desk justify-content-center">
+              <h3 class="col-md-12 col-12 not_rated ico_not_rated">NOT RATED ICO</h3>
+              <app-list-item *ngFor="let project of notRatedProjectArr" [project]="project"></app-list-item>
+          </div>
+      </div>
+  </div>
+</div>
+<div class='val1' style='display:none;'>21</div>
+<div class='val2' style='display:none;'>27</div>
