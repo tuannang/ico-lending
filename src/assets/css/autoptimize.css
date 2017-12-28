@@ -635,6 +635,12 @@ a:hover {
   justify-content: flex-start;
 }
 
+.ico-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .ico-icon {
   width: 60px;
   min-width: 60px;
