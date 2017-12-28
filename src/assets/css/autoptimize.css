@@ -1386,6 +1386,42 @@ input:-ms-input-placeholder {
   margin: auto;
 }
 
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s,visibility 0s 0s;
+  -moz-transition: opacity .3s 0s,visibility 0s 0s;
+  transition: opacity .3s 0s,visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+  opacity: .5;
+}
+
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+
+@media only screen and (min-width:768px) {
+  .cd-top {
+      right: 20px;
+      bottom: 20px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .cd-top {
+      height: 60px;
+      width: 60px;
+      right: 30px;
+      bottom: 30px;
+  }
+}
+
 @media only screen and (min-width:768px) {
   .cd-top {
     right: 20px;
@@ -2647,6 +2683,11 @@ h4 {
   .ico-card .ico-main-info {
     height: 70px;
   }
+
+  .cd-top {
+    z-index: 99999;
+  }
+
 }
 
 p.desc_footer_ico {
