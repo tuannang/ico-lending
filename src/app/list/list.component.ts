@@ -10,26 +10,41 @@ import { projects } from '../mock-projects';
 export class ListComponent implements OnInit {
 
   projects = projects;
-  ratedProjectArr = [];
-  notRatedProjectArr = [];
+  activeIcosArr = [];
+  upcomingIcosArr = [];
+  endedIcosArr = [];
+  scamIcosArr = [];
 
-  ratedProject() {
-      this.ratedProjectArr = _.filter(this.projects, function(p){
-        return p.is_rated;
+  activeIcos() {
+      this.activeIcosArr = _.filter(this.projects, function(p){
+        return p.status === 'ACTIVE';
       });
   }
 
-  notRatedProject() {
-    this.notRatedProjectArr = _.filter(this.projects, function(p){
-      return !p.is_rated;
+  upcomingIcos() {
+    this.upcomingIcosArr = _.filter(this.projects, function(p){
+      return p.status === 'UPCOMING';
+    });
+  }
+
+  endedIcos() {
+    this.endedIcosArr = _.filter(this.projects, function(p){
+      return p.status === 'ENDED';
+    });
+  }
+
+  scamIcos() {
+    this.scamIcosArr = _.filter(this.projects, function(p){
+      return p.status === 'SCAM';
     });
   }
 
   constructor() { }
 
   ngOnInit() {
-    this.ratedProject();
-    this.notRatedProject();
+    this.activeIcos();
+    this.upcomingIcos();
+    this.endedIcos();
+    this.scamIcos();
   }
-
 }

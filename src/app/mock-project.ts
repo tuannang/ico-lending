@@ -1,17 +1,24 @@
-import { Tags } from './mock-tags';
-
 export class Project {
-    id: number;
+    id: string;
     name: string;
-    short_des: string;
-    is_pre_sale: boolean;
-    image_url: string;
-    interest: string;
-    category_type: string;
-    category_name: string;
+    rating: string;
+    hype: string;
+    scam: string;
+    moon: string;
+    start: string;
+    end: string;
+    status: string;
+    betting: string;
+    logo: string;
+    is_presale: string;
+    description: string;
+    media_url: string;
     goal: string;
-    start_date: string;
-    end_date: string;
-    tags: Tags;
-    is_rated: boolean;
+    website: string;
+    whitepaper: string;
+    github: string;
+    twitter: string;
+    telegram: string;
+    bitcointalk: string;
+    youtube: string;
 }

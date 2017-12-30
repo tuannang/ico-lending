@@ -5,18 +5,23 @@
 </div>
 <div class='categ_new_tabs'>
   <ul>
-      <li class='active_tab_category'>All<sub>{{projects.length}}</sub></li>
-      <li>RATED<sub>{{ratedProjectArr.length}}</sub></li>
-      <li>NOT RATED<sub>{{notRatedProjectArr.length}}</sub></li>
+      <li class='active_tab_category'>ALL<sub>{{projects.length}}</sub></li>
+      <li class='active_tab_category'>ACTIVE ICO<sub>{{activeIcosArr.length}}</sub></li>
+      <li class='active_tab_category'>UPCOMING ICO<sub>{{upcomingIcosArr.length}}</sub></li>
+      <li class='active_tab_category'>ENDED<sub>{{endedIcosArr.length}}</sub></li>
+      <li class='active_tab_category'>SCAM<sub>{{scamIcosArr.length}}</sub></li>
   </ul>
 </div>
 <div id='upcoming_table_head' class='categ_top_table'>
-  <span>Project</span>
-  <span>Interest</span>
-  <span>Category</span>
-  <span>Goal</span>
-  <span>Start Date</span>
-  <span>End Date</span>
+  <span>name</span>
+  <span>rating</span>
+  <span>hype</span>
+  <span>scam</span>
+  <span>moon</span>
+  <span>start</span>
+  <span>end</span>
+  <span>status</span>
+  <span>betting</span>
 </div>
 <div class="tabs__content active">
   <div class='col-lg-6 col-md-12 col-12 all' id='ajaxc'>
@@ -32,8 +37,8 @@
   <div class='col-lg-6 col-md-12 col-12 first_r' id='ajaxc'>
       <div>
           <div class="category-desk justify-content-center">
-              <h3 class="col-md-12 col-12 not_rated">RATED ICO</h3>
-              <app-list-item *ngFor="let project of ratedProjectArr" [project]="project"></app-list-item>
+              <h3 class="col-md-12 col-12 not_rated">ACTIVE ICO</h3>
+              <app-list-item *ngFor="let project of activeIcosArr" [project]="project"></app-list-item>
           </div>
       </div>
   </div>
@@ -42,11 +47,31 @@
   <div class='col-lg-6 col-md-12 col-12 end_r' id='ajaxc'>
       <div>
           <div class="category-desk justify-content-center">
-              <h3 class="col-md-12 col-12 not_rated ico_not_rated">NOT RATED ICO</h3>
-              <app-list-item *ngFor="let project of notRatedProjectArr" [project]="project"></app-list-item>
+              <h3 class="col-md-12 col-12 not_rated ico_not_rated">UPCOMING ICO</h3>
+              <app-list-item *ngFor="let project of upcomingIcosArr" [project]="project"></app-list-item>
           </div>
       </div>
   </div>
 </div>
+<div class="tabs__content">
+    <div class='col-lg-6 col-md-12 col-12 end_r' id='ajaxc'>
+        <div>
+            <div class="category-desk justify-content-center">
+                <h3 class="col-md-12 col-12 not_rated ico_not_rated">ENDED</h3>
+                <app-list-item *ngFor="let project of endedIcosArr" [project]="project"></app-list-item>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="tabs__content">
+    <div class='col-lg-6 col-md-12 col-12 end_r' id='ajaxc'>
+        <div>
+            <div class="category-desk justify-content-center">
+                <h3 class="col-md-12 col-12 not_rated ico_not_rated">SCAM</h3>
+                <app-list-item *ngFor="let project of scamIcosArr" [project]="project"></app-list-item>
+            </div>
+        </div>
+    </div>
+  </div>
 <div class='val1' style='display:none;'>21</div>
 <div class='val2' style='display:none;'>27</div>
