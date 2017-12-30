@@ -642,19 +642,18 @@ a:hover {
 }
 
 .ico-icon {
-  width: 60px;
-  min-width: 60px;
-  height: 60px;
-  min-height: 60px;
-  border-radius: 30px;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  min-height: 50px;
+  border-radius: 0;
   overflow: hidden;
-  margin-right: 12px;
   position: relative;
 }
 
 .ico-icon img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 
 .pre-icon {
@@ -898,6 +897,8 @@ position:relative;
 }
 
 .interest,
+.normal_column,
+.end_date,
 .date {
   display: inline-block;
   color: rgba(0, 0, 0, .55);
@@ -1299,7 +1300,11 @@ input:-ms-input-placeholder {
 }
 
 .red {
-  color: #fe467c;
+  color: #ff0000 !important;
+}
+
+.green {
+  color: #4ca061;
 }
 
 .btc, .eth {
@@ -1492,12 +1497,8 @@ input:-ms-input-placeholder {
 }
 
 #careg_ico .category-desk .ico-card {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   text-align: initial;
-}
-
-.ico-icon img {
-  border-radius: 30px;
 }
 
 .end_date {
@@ -1697,7 +1698,19 @@ input:-ms-input-placeholder {
   #careg_ico .interest .spspan {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 11.5px;
+    font-size: 13.5px;
+    color: #383838;
+  }
+  #careg_ico .date .spspan {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    color: #383838;
+  }
+  #careg_ico .end_date .spspan {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13.5px;
     color: #383838;
   }
   #careg_ico .end_date {
@@ -1724,14 +1737,14 @@ input:-ms-input-placeholder {
   }
   #careg_ico #categ_desctop {
     display: inline-block;
-    width: 125px;
+    width: 96px;
   }
   #admin #careg_ico #categ_desctop {
     display: inline-block;
-    width: 122px;
+    width: 96px;
   }
   #careg_ico .category-desk .ico-card {
-    padding: 20px;
+    padding: 10px;
   }
   #careg_ico .interest {
     width: 103px;
@@ -1879,8 +1892,8 @@ input:-ms-input-placeholder {
     padding: 0;
   }
   #careg_ico .a_ico {
-    height: 91px;
-    min-height: 91px;
+    height: 70px;
+    min-height: 70px;
     max-height: 91px;
   }
   #careg_ico .ico-card .ico-main-info {
@@ -1892,11 +1905,11 @@ input:-ms-input-placeholder {
     width: 75%;
   }
   #careg_ico .a_ico .ico-icon {
-    width: 50px;
+    width: 40px;
     display: inline-block;
-    min-width: 50px;
-    height: 50px;
-    min-height: 50px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
     vertical-align: middle;
   }
   #careg_ico .ico-category-name {
@@ -1912,74 +1925,86 @@ input:-ms-input-placeholder {
   }
   #admin #careg_ico .ico-list-item {
     display: inline-block;
-    width: 357px;
+    width: 300px;
     min-height: 44px;
   }
   #careg_ico #upcoming_ico .ico-row {
     width: 360px;
   }
   #admin #careg_ico #upcoming_ico .ico-row {
-    width: 357px;
+    width: 300px;
   }
   #careg_ico #upcoming_ico .ico-list-item {
     width: 360px;
   }
   #admin #careg_ico #upcoming_ico .ico-list-item {
-    width: 357px;
+    width: 310px;
   }
   #careg_ico #upcoming_ico .interest {
     width: 146px;
   }
   #admin #careg_ico #upcoming_ico .interest {
-    width: 143px;
+    width: 96px;
   }
   #careg_ico #upcoming_ico .categ_type {
-    width: 191px;
+    width: 96px;
   }
   #admin #careg_ico #upcoming_ico .categ_type {
-    width: 188px;
+    width: 96px;
+  }
+  #admin #careg_ico #upcoming_ico .normal_column {
+    width: 96px;
   }
   #careg_ico #upcoming_ico #categ_desctop {
-    width: 179px;
+    width: 96px;
   }
   #admin #careg_ico #upcoming_ico #categ_desctop {
-    width: 150px;
+    width: 96px;
   }
   #careg_ico #upcoming_ico .date {
-    width: 112px;
+    width: 96px;
   }
   #admin #careg_ico #upcoming_ico .date {
-    width: 109px;
+    width: 96px;
   }
   #careg_ico #upcoming_ico .end_date {
-    width: 112px;
+    width: 96px;
   }
   #careg_ico #upcoming_ico .end_date {
-    width: 109px;
+    width: 96px;
   }
   #admin #careg_ico #upcoming_ico .end_date {
-    width: 112px;
+    width: 96px;
   }
   #upcoming_table_head.categ_top_table span:nth-of-type(1) {
-    width: 357px;
+    width: 300px;
   }
   #upcoming_table_head.categ_top_table span:nth-of-type(2) {
-    width: 143px;
+    width: 96px;
   }
   #upcoming_table_head.categ_top_table span:nth-of-type(3) {
-    width: 187px;
+    width: 96px;
   }
   #upcoming_table_head.categ_top_table span:nth-of-type(4) {
-    width: 176px;
+    width: 96px;
   }
   #admin #upcoming_table_head.categ_top_table span:nth-of-type(4) {
-    width: 150px;
+    width: 96px;
   }
   #upcoming_table_head.categ_top_table span:nth-of-type(5) {
-    width: 110px;
+    width: 96px;
   }
   #upcoming_table_head.categ_top_table span:nth-of-type(6) {
-    width: 62px;
+    width: 96px;
+  }
+  #upcoming_table_head.categ_top_table span:nth-of-type(7) {
+    width: 96px;
+  }
+  #upcoming_table_head.categ_top_table span:nth-of-type(8) {
+    width: 96px;
+  }
+  #upcoming_table_head.categ_top_table span:nth-of-type(9) {
+    width: 96px;
   }
 }
 
@@ -2021,28 +2046,28 @@ input:-ms-input-placeholder {
     width: 147px !important;
   }
   #careg_ico #upcoming_ico #categ_desctop {
-    width: 150px !important;
+    width: 96px !important;
   }
   #admin #careg_ico #upcoming_ico #categ_desctop {
-    width: 147px !important;
+    width: 96px !important;
   }
   #upcoming_table_head.categ_top_table span:nth-of-type(5) {
     width: 101px;
   }
   #careg_ico #upcoming_ico .date {
-    width: 103px;
+    width: 96px;
   }
   #admin #careg_ico #upcoming_ico .date {
-    width: 101px;
+    width: 96px;
   }
   #upcoming_table_head.categ_top_table span:nth-of-type(6) {
     width: 74px;
   }
   #careg_ico #upcoming_ico .end_date {
-    width: 115px;
+    width: 96px;
   }
   #admin #careg_ico #upcoming_ico .end_date {
-    width: 112px;
+    width: 96px;
   }
   #careg_ico .categ_top_table span:nth-of-type(1) {
     width: 250px;
@@ -2087,10 +2112,10 @@ input:-ms-input-placeholder {
     width: 129px;
   }
   #careg_ico #categ_desctop {
-    width: 105px;
+    width: 96px;
   }
   #admin #careg_ico #categ_desctop {
-    width: 102px;
+    width: 96px;
   }
   #admin #careg_ico .end_date {
     display: inline-block !important;
@@ -2273,7 +2298,6 @@ input:-ms-input-placeholder {
 
 footer {
   display: block;
-  margin: 50px 0 45px 0;
   height: auto !important;
 }
 
@@ -2323,7 +2347,7 @@ footer {
 .new_footer_logo img {
   margin-bottom: 10px;
   margin-top: -10px;
-  width: 122px;
+  width: 164px;
   height: 30px;
 }
 
@@ -2383,7 +2407,6 @@ footer {
   }
   footer {
     display: block;
-    margin: 50px 0 45px 0;
     height: 100%;
     min-height: 100%;
   }
@@ -2609,11 +2632,11 @@ footer {
 }
 
 #careg_ico .date {
-  width: 91px;
+  width: 96px;
 }
 
 #admin #careg_ico .date {
-  width: 87px;
+  width: 96px;
 }
 
 @media(max-width:989px) {

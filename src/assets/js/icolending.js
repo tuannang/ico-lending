@@ -2951,9 +2951,6 @@ jQuery(window).on('ajaxComplete', function () {
     return this[0] ? a.idleTimer(b, this[0]) : this
   }
 }(jQuery);
-var smile_ajax = {
-  "url": "https:\/\/icodrops.com\/wp-admin\/admin-ajax.php"
-};
 ! function (a) {
   "use strict";
 
@@ -2991,13 +2988,6 @@ var smile_ajax = {
         option: "smile_info_bar_styles",
         security: b
       };
-    jQuery.ajax({
-      url: smile_ajax.url,
-      data: c,
-      type: "POST",
-      dataType: "HTML",
-      success: function (a) {}
-    })
   }
 
   function f(a, b, c) {
@@ -3654,18 +3644,6 @@ var smile_ajax = {
               var k = g.find(".cp-info-bar-body").outerHeight();
               g.css("min-height", k + "px")
             }
-            g.addClass("ib-display"), jQuery(document).trigger("infobarOpen", [g]), g.hasClass("cp_impression_counted") || g.hasClass("cp-disabled-impression") || (d.push(f), 0 !== d.length && (e(d), jQuery("[data-info_bar-style=" + f + "]").each(function (a) {
-              jQuery(this).addClass("cp_impression_counted")
-            }))), setTimeout(function () {
-              var a = g.find(".ib-subscribe").data("animation");
-              g.find(".ib-subscribe").addClass(a)
-            }, 2e3), jQuery.ajax({
-              url: smile_ajax.url,
-              data: data,
-              type: "POST",
-              dataType: "HTML",
-              success: function (a) {}
-            })
           }
         }
       })
@@ -3838,63 +3816,6 @@ function (a) {
       })
     }), i.hide().css({
       visibility: "visible"
-    }).fadeIn(100), jQuery.ajax({
-      url: smile_ajax.url,
-      data: g,
-      type: "POST",
-      dataType: "HTML",
-      success: function (b) {
-        o && f(u, !0, o);
-        var c = jQuery.parseJSON(b),
-          g = "",
-          t = "";
-        void 0 !== c.status && null != c.status && (g = c.status), c.email_status ? d.find(".cp-email").removeClass("cp-error") : (setTimeout(function () {
-          d.find(".cp-email").addClass("cp-error")
-        }, 100), d.find(".cp-email").focus());
-        var w = void 0 !== c.detailed_msg && null !== c.detailed_msg ? c.detailed_msg : "";
-        if ("" !== w && null !== w && (w = "<h5>Here is More Information:</h5><div class='cp-detailed-message'>" + w + "</div>", w += "<div class='cp-admin-error-notice'>Read How to Fix This, click <a target='_blank' href='http://docs.sharkz.in/something-went-wrong/'>here</a></div>", w += "<div class='cp-go-back'>Go Back</div>", t += '<div class="cp-only-admin-msg">[Only you can see this message]</div>'), c.message = c.message.replace(/\\/g, ""), void 0 !== c.message && null != c.message && (h.hide().css({
-            visibility: "visible"
-          }).fadeIn(120), n.hide().css({
-            visibility: "visible"
-          }).fadeIn(120), t += '<div class="cp-m-' + g + '"><div class="cp-error-msg">' + c.message + "</div>" + w + "</div>", h.html(t), l.addClass("cp-form-submit-" + g)), void 0 !== c.action && null != c.action && (i.fadeOut(100, function () {
-            jQuery(this).show().css({
-              visibility: "hidden"
-            })
-          }), h.hide().css({
-            visibility: "visible"
-          }).fadeIn(120), n.hide().css({
-            visibility: "visible"
-          }).fadeIn(120), "success" === g))
-          if (jQuery("head").append('<style class="cp-tooltip-css">.tip.' + m + "{display:none }</style>"), "redirect" === c.action) {
-            k.hide(), j.hide();
-            var y = c.url,
-              z = "";
-            z = y.indexOf("?") > -1 ? "&" : "?";
-            var A = y + z + decodeURI(v);
-            if (A = 1 == p ? A : c.url, "download" !== q) {
-              x = q;
-              var B = window.open(A, "_" + x);
-              "" == B && (document.location.href = A)
-            } else e(A)
-          } else if (k.show(), "disappear" == r ? (j.removeClass("cp-hide-inline-style"), j.removeClass("cp-close-ifb"), setTimeout(function () {
-            j.hasClass("cp-info-bar-inline") && j.addClass("cp-hide-inline-style"), j.hasClass("cp-ifb-with-toggle") && j.addClass("cp-close-ifb"), jQuery(document).trigger("cp_close_info_bar", [j])
-          }, s)) : "reappear" == r && setTimeout(function () {
-            h.empty(), k.css({
-              display: "none"
-            }), h.removeAttr("style"), i.removeAttr("style"), d.trigger("reset")
-          }, s), jQuery(a).find("a").length > 0) {
-          var C = jQuery(a).find("a").attr("href"),
-            D = jQuery(a).find("a").attr("target");
-          "" != D && void 0 !== D || (D = "_self"), "" == C && "#" == C || window.open(C, D)
-        }
-      },
-      error: function (a) {
-        k.hide(), i.fadeOut(100, function () {
-          jQuery(this).show().css({
-            visibility: "hidden"
-          })
-        })
-      }
     }))
   }
 
