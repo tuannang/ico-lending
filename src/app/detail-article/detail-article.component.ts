@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-detail-article',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-article.component.css']
 })
 export class DetailArticleComponent implements OnInit {
-
-  constructor() { }
+  @Input() project: {};
+  constructor(public sanitizer: DomSanitizer) { }
 
   ngOnInit() {
   }
-
 }

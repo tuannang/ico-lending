@@ -12,7 +12,7 @@ import { DetailSharingBlockComponent } from './detail-sharing-block/detail-shari
 import { DetailArticleComponent } from './detail-article/detail-article.component';
 
 const appRoutes: Routes = [
-  { path: 'detail/:id', component: DetailComponent },
+  { path: ':id', component: DetailComponent },
   { path: '', component: ListComponent }
 ];
 

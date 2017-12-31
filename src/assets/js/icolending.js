@@ -1350,10 +1350,12 @@ jQuery.fn.sortElements = (function () {
             };
           }
         }
+
+        $('.valute').prepend(ETH);
+        $('.valute').prepend(BTC);
       }
     });
-    $('.valute').prepend(ETH);
-    $('.valute').prepend(BTC);
+    
     var offset = 300,
       offset_opacity = 1200,
       scroll_top_duration = 700,

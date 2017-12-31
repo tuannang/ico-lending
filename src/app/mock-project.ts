@@ -11,6 +11,7 @@ export class Project {
     betting: string;
     logo: string;
     is_presale: string;
+    has_detail: string;
     description: string;
     media_url: string;
     goal: string;
@@ -21,4 +22,17 @@ export class Project {
     telegram: string;
     bitcointalk: string;
     youtube: string;
+    ticker: string;
+    token_type: string;
+    price: string;
+    total_token: string;
+    available_token_sale: string;
+    ref_bonus: string;
+    accepts: string;
+    social_activity_level: string;
+    number_team_member: string;
+    ssl_certificate: string;
+    desktop_wallet: string;
+    internal_exchange: string;
+    external_exchange: string;
 }

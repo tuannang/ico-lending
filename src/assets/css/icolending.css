@@ -945,7 +945,7 @@ position:relative;
 }
 
 .ico-desk .ico-main-info {
-  padding-top: 8px;
+  padding-top: 0;
 }
 
 .ico-desk .ico-category-name {
@@ -1534,7 +1534,7 @@ input:-ms-input-placeholder {
 }
 
 #careg_ico .category-desk .ico-card {
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
   text-align: initial;
 }
 
@@ -1762,7 +1762,7 @@ input:-ms-input-placeholder {
   }
   #careg_ico .categ_desc_short {
     display: block;
-    height: 25px;
+    height: 18px;
     position: relative;
     line-height: 95%;
     overflow: hidden;
@@ -1782,7 +1782,7 @@ input:-ms-input-placeholder {
     width: 96px;
   }
   #careg_ico .category-desk .ico-card {
-    padding: 10px;
+    padding: 5px 5px 5px 10px;
   }
   #careg_ico .interest {
     width: 103px;
@@ -1930,8 +1930,8 @@ input:-ms-input-placeholder {
     padding: 0;
   }
   #careg_ico .a_ico {
-    height: 70px;
-    min-height: 70px;
+    height: 48px;
+    min-height: 48px;
     max-height: 91px;
   }
   #careg_ico .ico-card .ico-main-info {
@@ -1964,7 +1964,8 @@ input:-ms-input-placeholder {
   #admin #careg_ico .ico-list-item {
     display: inline-block;
     width: 300px;
-    min-height: 44px;
+    height: 37px;
+    min-height: 37px;
   }
   #careg_ico #upcoming_ico .ico-row {
     width: 360px;
