@@ -1,12 +1,11 @@
 <div class="col-md-12 col-12 a_ico">
-  <div id='upcoming_ico' class="white-desk ico-card  pinned_ad">
+  <div id='upcoming_ico' class="white-desk ico-card">
     <i class="fa fa-rocket" aria-hidden="true" title="Advertising"></i>
     <div class="ico-list-item">
       <div class="ico-icon">
         <a id='ccc' href="/detail/{{project.id}}" rel="bookmark" [attr.data-id]="project.id">
           <div class="pre-icon" *ngIf="project.is_presale ==='1'">PRE SALE</div>
-          <img width="150" height="150" class="lazy-hidden attachment-thumbnail size-thumbnail wp-post-image"
-            alt="{{project.name}}" [attr.data-src]="project.logo" data-lazy-type="image"
+          <img width="150" height="150" alt="{{project.name}}" src="{{project.logo}}" data-lazy-type="image"
           />
         </a>
       </div>
@@ -16,25 +15,23 @@
           <a href="/detail/{{project.id}}" rel="bookmark">{{project.name}}</a>
           <i class="fa fa-rocket" aria-hidden="true" title="{{project.name}}"></i>
         </h3>
-        <span class="ico-category-name">category</span>
-
         <div class="goal-in-card">
           GOAL: {{project.goal}}
         </div>
-        <div class="categ_desc_short">{{project.description}}</div>
+        <div class="categ_desc_short">{{project.description.substring(0, 36)}}...</div>
       </div>
     </div>
     <div class="interest">
       <span class="spspan">{{project.rating}}/5</span>
     </div>
     <div class="date">
-        <span class="spspan">{{project.hype}}</span>
+        <span [attr.class]="'spspan ' + project.hype.replace(' ','_').toLowerCase() + '1'">{{project.hype}}</span>
     </div>
     <div class="end_date">
-        <span class="spspan">{{project.scam}}</span>
+        <span [attr.class]="'spspan ' + project.scam.replace(' ','_').toLowerCase() + '2'">{{project.scam}}</span>
     </div>
     <div class="end_date">
-        <span class="spspan">{{project.moon}}</span>
+        <span [attr.class]="'spspan ' + project.moon.replace(' ','_').toLowerCase() + '3'">{{project.moon}}</span>
     </div>
     <div class="end_date">
         <span class="spspan">{{project.start}}</span>

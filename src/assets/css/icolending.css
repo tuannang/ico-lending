@@ -567,7 +567,7 @@ html {
 html,
 body {
   background-color: #f6f6f6;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   font-size: 16px;
   color: #000;
 }
@@ -863,7 +863,7 @@ button {
 
 .ico-card {
   margin: 9px 0 20px 0;
-  padding: 20px;
+  padding: 10px 10px 5px 10px;
   position: relative;
 }
 
@@ -874,7 +874,7 @@ position:relative;
 }
 
 .ico-card .ico-main-info {
-  height: 70px;
+  height: 50px;
 }
 
 .ico-main-info h3 a {
@@ -902,7 +902,8 @@ position:relative;
 .date {
   display: inline-block;
   color: rgba(0, 0, 0, .55);
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .date {
@@ -1299,12 +1300,48 @@ input:-ms-input-placeholder {
   display: block;
 }
 
-.red {
+.mid1, .mid2, .mid3 {
+  color: #e69138 !important;
+}
+
+.low1, .low3 {
+  color: #ff0000 !important;
+}
+
+.low2 {
+  color: #80aa6f !important;
+}
+
+.very_low1, .very_low3 {
+  color: #991425 !important;
+}
+
+.very_low2 {
+  color: #4ca061 !important;
+}
+
+.high1, .high3 {
+  color: #80aa6f !important;
+}
+
+.high2 {
+  color: #ff0000 !important;
+}
+
+.very_high1, .very_high3 {
+  color: #4ca061 !important;
+}
+
+.very_high2 {
+  color: #991425 !important;
+}
+
+.red, .scam1, .scam2, .scam3 {
   color: #ff0000 !important;
 }
 
 .green {
-  color: #4ca061;
+  color: #4ca061 !important;
 }
 
 .btc, .eth {
@@ -1673,7 +1710,7 @@ input:-ms-input-placeholder {
   #careg_ico .ico-main-info h3 a {
     color: #000;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 14.3px;
     font-weight: 700;
   }
   #careg_ico .categ_top_table span {
@@ -1681,7 +1718,7 @@ input:-ms-input-placeholder {
     opacity: .7;
     color: #fff;
     font-family: Rajdhani;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -1698,19 +1735,20 @@ input:-ms-input-placeholder {
   #careg_ico .interest .spspan {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 13.5px;
+    font-size: 14.5px;
     color: #383838;
   }
   #careg_ico .date .spspan {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14.5px;
     color: #383838;
+    font-family: Rajdhani;
   }
   #careg_ico .end_date .spspan {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 13.5px;
+    font-size: 14.5px;
     color: #383838;
   }
   #careg_ico .end_date {
@@ -2704,7 +2742,7 @@ h4 {
 
 @media(max-width:989px) {
   .ico-card .ico-main-info {
-    height: 70px;
+    height: 50px;
   }
 
   .cd-top {
