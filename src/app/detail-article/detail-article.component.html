@@ -25,8 +25,9 @@
         <div class="ico-row" id="middle-desk">
           <div class="ico-media">
             <div class="embed-container">
-              <iframe width="640" height="360" [attr.src]="sanitizer.bypassSecurityTrustResourceUrl(project.media_url)" frameborder="0" gesture="media"
+              <iframe *ngIf="project.media_url.indexOf('youtube') !== -1" width="640" height="360" [attr.src]="sanitizer.bypassSecurityTrustResourceUrl(project.media_url)" frameborder="0" gesture="media"
                 allow="encrypted-media" allowfullscreen></iframe>
+              <img *ngIf="project.media_url.indexOf('youtube') === -1" width="640" height="360" alt="{{project.media_url}}" [attr.src]="'./assets/img/' + project.media_url" data-lazy-type="image"/>
             </div>
           </div>
           <div class="ico-right-col">
@@ -41,7 +42,7 @@
             </div>
             <div class="fund-goal">
               <div class="blue money-goal">
-                {{ project.goal | currency}}
+                ${{ project.goal | number}}
               </div>
               <div class="goal">GOAL</div>
             </div>
@@ -132,13 +133,13 @@
             <li>
               <span class="grey">ICO Token Price: </span>{{project.price}}</li>
             <li>
-              <span class="grey">Fundraising Goal: </span>{{project.total_token | currency}}</li>
+              <span class="grey">Fundraising Goal: </span>${{project.goal | number}}</li>
           </div>
           <div class="col-12 col-md-6">
             <li>
-                <span class="grey">Total Tokens: </span>{{project.total_token | currency}}</li>
+                <span class="grey">Total Tokens: </span>{{project.total_token | number}} {{project.ticker}}</li>
               <li>
-                <span class="grey">Available for Token Sale: </span>{{project.available_token_sale | currency}}</li>
+                <span class="grey">Available for Token Sale: </span>{{project.available_token_sale | number}} {{project.ticker}}</li>
             <li>
               <span class="grey">Ref Bonus: </span>{{project.ref_bonus}}</li>
             <li>
@@ -157,9 +158,19 @@
             <li>
               <span class="grey">Social Activity Level: </span>{{project.social_activity_level}}</li>
             <li>
+              <span class="grey">Country: </span>{{project.country}}</li>
+            <li>
               <span class="grey">Number of Team Members: </span>{{project.number_team_member}}</li>
             <li>
-              <span class="grey">SSL certificate: </span>{{project.ssl_certificate}}</li>
+              <span class="grey">Customer Support: </span><a href="mailto:{{project.customer_support_email}}" target="_blank" rel="nofollow">
+                Email</a> 
+                <i class="fa fa-external-link" aria-hidden="true"></i></li>
+            <li>
+                <span class="grey">SSL certificate: </span>{{project.ssl_certificate}}</li>
+            <li>
+              <span class="grey">Domain Registered: </span>{{project.domain_registered}}</li>
+            <li>
+              <span class="grey">Domain Expires: </span>{{project.domain_expires}}</li>
             <li>
               <span class="grey">Desktop Wallet: </span>{{project.desktop_wallet}}</li>
             <li>

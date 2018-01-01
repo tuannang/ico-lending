@@ -14,10 +14,14 @@
           <a [attr.href]="project.has_detail == '1' ? '/' + project.id : project.website" [attr.target]="project.has_detail === '1' ? '_parent': '_blank'">{{project.name}}</a>
           <i *ngIf="project.has_detail == '0'" class="fa fa-external-link" [attr.title]="'go to ' + project.name"></i>
         </h3>
-        <div class="goal-in-card">
-          GOAL: {{project.goal}}
+        <div class="goal-in-card" *ngIf="project.goal != ''">
+          GOAL: ${{project.goal | number}}
         </div>
-        <div class="categ_desc_short">{{project.description.substring(0, 36)}}...</div>
+        <div class="goal-in-card" *ngIf="project.goal == ''">
+          MOON: {{project.moon}}
+        </div>
+        <div class="categ_desc_short" *ngIf="project.description != ''">{{project.description.substring(0, 38)}}...</div>
+        <div class="categ_desc_short" *ngIf="project.description == ''">Ticker: {{project.ticker}}</div>
       </div>
     </div>
     <div class="interest">

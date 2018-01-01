@@ -35,4 +35,8 @@ export class Project {
     desktop_wallet: string;
     internal_exchange: string;
     external_exchange: string;
+    country: string;
+    domain_registered: string;
+    domain_expires: string;
+    customer_support_email: string;
 }
