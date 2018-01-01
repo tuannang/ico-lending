@@ -13,6 +13,7 @@
         <h3>
           <a [attr.href]="project.has_detail == '1' ? '/' + project.id : project.website" [attr.target]="project.has_detail === '1' ? '_parent': '_blank'">{{project.name}}</a>
           <i *ngIf="project.has_detail == '0'" class="fa fa-external-link" [attr.title]="'go to ' + project.name"></i>
+          <i *ngIf="project.has_detail == '1'" class="fa fa-check green" [attr.title]="'detail ' + project.name"></i>
         </h3>
         <div class="goal-in-card" *ngIf="project.goal != ''">
           GOAL: ${{project.goal | number}}
