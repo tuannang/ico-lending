@@ -41,7 +41,7 @@
             </div>
             <div class="fund-goal">
               <div class="blue money-goal">
-                {{project.goal}}
+                {{ project.goal | currency}}
               </div>
               <div class="goal">GOAL</div>
             </div>
@@ -132,13 +132,13 @@
             <li>
               <span class="grey">ICO Token Price: </span>{{project.price}}</li>
             <li>
-              <span class="grey">Fundraising Goal: </span>{{project.total_token}}</li>
+              <span class="grey">Fundraising Goal: </span>{{project.total_token | currency}}</li>
           </div>
           <div class="col-12 col-md-6">
             <li>
-                <span class="grey">Total Tokens: </span>{{project.total_token}}</li>
+                <span class="grey">Total Tokens: </span>{{project.total_token | currency}}</li>
               <li>
-                <span class="grey">Available for Token Sale: </span>{{project.available_token_sale}}</li>
+                <span class="grey">Available for Token Sale: </span>{{project.available_token_sale | currency}}</li>
             <li>
               <span class="grey">Ref Bonus: </span>{{project.ref_bonus}}</li>
             <li>
