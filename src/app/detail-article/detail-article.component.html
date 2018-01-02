@@ -27,7 +27,7 @@
             <div class="embed-container">
               <iframe *ngIf="project.media_url.indexOf('youtube') !== -1" width="640" height="360" [attr.src]="sanitizer.bypassSecurityTrustResourceUrl(project.media_url)" frameborder="0" gesture="media"
                 allow="encrypted-media" allowfullscreen></iframe>
-              <img *ngIf="project.media_url.indexOf('youtube') === -1" width="640" height="360" alt="{{project.media_url}}" [attr.src]="'./assets/img/' + project.media_url" data-lazy-type="image"/>
+              <img *ngIf="project.media_url.indexOf('youtube') === -1" width="600" height="360" alt="{{project.media_url}}" [attr.src]="'./assets/img/' + project.media_url" data-lazy-type="image"/>
             </div>
           </div>
           <div class="ico-right-col">
