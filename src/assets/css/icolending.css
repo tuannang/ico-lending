@@ -744,6 +744,20 @@ input#s {
   font-weight: 900;
 }
 
+#join-now {
+  text-align: center;
+  padding-top: 15px;
+}
+#join-now a {
+  font-family: Rajdhani;
+  font-size: 34px;
+  font-weight: bold;
+  color: #386ce5;
+  vertical-align: top;
+  line-height: 1.33;
+  text-align: right;
+}
+
 input[type=text]#s:focus,
 button {
   outline: 0;
@@ -1054,7 +1068,7 @@ position:relative;
   background: #326dec;
   border-radius: 2px;
   width: 145px;
-  padding: 6px 0 4px 0;
+  padding: 9px;
   margin: 0 auto 14px auto;
   color: #fff;
   font-weight: 500;
