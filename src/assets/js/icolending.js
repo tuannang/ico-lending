@@ -1376,9 +1376,15 @@ jQuery.fn.sortElements = (function () {
       if ($("#careg_ico").hasClass('home_bbb')) {
         $('#careg_ico .tabs__content:eq(0)').append('<div id="view_all" class="white-desk ico-card"><a href="/bounty-list/"><span>View all list</span><span><img src="/wp-content/themes/ico-drops-2-0/img/home_right.svg"></span></a></div>');
         $('#careg_ico .tabs__content:eq(1)').append('<div id="view_all" class="white-desk ico-card"><a href="/bounty-list/"><span>View all list</span><span><img src="/wp-content/themes/ico-drops-2-0/img/home_right.svg"></span></a></div>');
+        $('#careg_ico .tabs__content:eq(2)').append('<div id="view_all" class="white-desk ico-card"><a href="/bounty-list/"><span>View all list</span><span><img src="/wp-content/themes/ico-drops-2-0/img/home_right.svg"></span></a></div>');
+        $('#careg_ico .tabs__content:eq(3)').append('<div id="view_all" class="white-desk ico-card"><a href="/bounty-list/"><span>View all list</span><span><img src="/wp-content/themes/ico-drops-2-0/img/home_right.svg"></span></a></div>');
+        $('#careg_ico .tabs__content:eq(4)').append('<div id="view_all" class="white-desk ico-card"><a href="/bounty-list/"><span>View all list</span><span><img src="/wp-content/themes/ico-drops-2-0/img/home_right.svg"></span></a></div>');
       } else {
         $('#careg_ico .tabs__content:eq(0)').append('<div class="col-md-12 col-12 a_ico showmore"><span>BACK TO TOP</span><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></div>');
         $('#careg_ico .tabs__content:eq(1)').append('<div class="col-md-12 col-12 a_ico showmore"><span>BACK TO TOP</span><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></div>');
+        $('#careg_ico .tabs__content:eq(2)').append('<div class="col-md-12 col-12 a_ico showmore"><span>BACK TO TOP</span><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></div>');
+        $('#careg_ico .tabs__content:eq(3)').append('<div class="col-md-12 col-12 a_ico showmore"><span>BACK TO TOP</span><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></div>');
+        $('#careg_ico .tabs__content:eq(4)').append('<div class="col-md-12 col-12 a_ico showmore"><span>BACK TO TOP</span><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></div>');
       }
       $('.showmore').on('click', function () {
         $('html, body').animate({
@@ -1896,6 +1902,8 @@ jQuery.fn.sortElements = (function () {
       $('#careg_ico .tabs__content:eq(0)').append('<div class="col-md-12 col-12 a_ico showmore"><span>BACK TO TOP</span><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></div>');
       $('#careg_ico .tabs__content:eq(1)').append('<div class="col-md-12 col-12 a_ico showmore"><span>BACK TO TOP</span><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></div>');
       $('#careg_ico .tabs__content:eq(2)').append('<div class="col-md-12 col-12 a_ico showmore"><span>BACK TO TOP</span><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></div>');
+      $('#careg_ico .tabs__content:eq(3)').append('<div class="col-md-12 col-12 a_ico showmore"><span>BACK TO TOP</span><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></div>');
+      $('#careg_ico .tabs__content:eq(4)').append('<div class="col-md-12 col-12 a_ico showmore"><span>BACK TO TOP</span><span><i class="fa fa-arrow-up" aria-hidden="true"></i></span></div>');
       $('.showmore').on('click', function () {
         $('html, body').animate({
           scrollTop: 0
